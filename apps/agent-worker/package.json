@@ -1,0 +1,27 @@
+{
+  "name": "@repo/agent-worker",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/agent-core": "workspace:*",
+    "@repo/config-env": "workspace:*",
+    "@repo/database": "workspace:*",
+    "@repo/types": "workspace:*",
+    "fastify": "^5.2.0",
+    "ioredis": "^6.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@repo/config-typescript": "workspace:*",
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

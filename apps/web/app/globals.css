@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0d1117;
+
+  --card: #ffffff;
+  --card-foreground: #0d1117;
+
+  --popover: #ffffff;
+  --popover-foreground: #0d1117;
+
+  --primary: #0969da;
+  --primary-foreground: #ffffff;
+
+  --secondary: #eaeef2;
+  --secondary-foreground: #0d1117;
+
+  --muted: #e6ecf3;
+  --muted-foreground: #57606a;
+
+  --accent: #eaeef2;
+  --accent-foreground: #0d1117;
+
+  --destructive: #d1242f;
+  --destructive-foreground: #ffffff;
+
+  --success: #1a7f37;
+  --success-foreground: #ffffff;
+
+  --warning: #9a6700;
+  --warning-foreground: #ffffff;
+
+  --border: #abb0b5;
+  --input: #d0d7de;
+  --ring: #0969da;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: #0d1117;
+  --foreground: #f0f6fc;
+
+  --card: #161b22;
+  --card-foreground: #f0f6fc;
+
+  --popover: #161b22;
+  --popover-foreground: #f0f6fc;
+
+  --primary: #2f81f7;
+  --primary-foreground: #ffffff;
+
+  --secondary: #21262d;
+  --secondary-foreground: #f0f6fc;
+
+  --muted: #21262d;
+  --muted-foreground: #8b949e;
+
+  --accent: #21262d;
+  --accent-foreground: #f0f6fc;
+
+  --destructive: #f85149;
+  --destructive-foreground: #ffffff;
+
+  --success: #3fb950;
+  --success-foreground: #ffffff;
+
+  --warning: #d29922;
+  --warning-foreground: #0d1117;
+
+  --border: #30363d;
+  --input: #30363d;
+  --ring: #2f81f7;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
+}

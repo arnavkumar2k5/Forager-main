@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792600030318,
+      "tag": "0000_fantastic_wrecking_crew",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792682811791,
+      "tag": "0001_modern_blink",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794904568168,
+      "tag": "0002_known_wendigo",
+      "breakpoints": true
+    }
+  ]
+}
