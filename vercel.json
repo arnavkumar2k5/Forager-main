@@ -1,0 +1,33 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "agent-worker": {
+      "root": "apps/agent-worker",
+      "framework": "fastify",
+      "buildCommand": "pnpm build",
+      "installCommand": "pnpm install"
+    },
+    "web": {
+      "root": "apps/web",
+      "framework": "nextjs",
+      "buildCommand": "pnpm build",
+      "installCommand": "pnpm install",
+      "bindings": [
+        {
+          "type": "service",
+          "service": "agent-worker",
+          "format": "url",
+          "env": "AGENT_WORKER_URL"
+        }
+      ]
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "web"
+      }
+    }
+  ]
+}
